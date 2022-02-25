@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-image: url("./assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Main-container{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+}
+.wrapper{
+  padding:50px;
+  border-radius: 30px;
+  width:80vw;
+  background-color: rgba(255,255,255,0.85);
+  border: 1px solid black;
+}
+.nav-bar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-box{
+  padding: 10px 40px;
+  border: 1px solid blue;
+  border-radius: 10px;
+  opacity: 0.5;
+  margin:10px;
+  font-size:1.1rem;
+}
+#submit{
+  padding:20px;
+  border:0.5px solid black;
+  text-transform: uppercase;
+  margin-left:30px;
+  border-radius: 20px;
+  transition: all 600ms ease;
+}
+#submit:hover{
+  transform: scale(1.1);
 }
 
-.App-link {
-  color: #61dafb;
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:2rem;
+  padding:10px;
+  margin:10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.place{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.place h1{
+  font-size:2rem;
+  font-weight:200;
+  padding:20px;
+  margin:10px auto;
+  font-family: fantasy;
+}
+.place h2{
+  font-size: 1.7rem;
+}
+
+
+.temp h1{
+  font-size:1.5rem;
+  padding:5px;
+  font-family: monospace;
+}
+.temp img{
+  height:200px;
+  width: 200px;
+}
+
+
+
+.temp{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:20px;
+}
+.temp-data{
+  display: flex;
+  align-items: center;
+  padding:30px;
+}
+.temp-data h1{
+  font-size:3rem;
+  margin-right:10px;
+  transition: all 1s ease-in;
+}
+
+.btns{
+  padding:20px;
+  border:1px solid black;
+  opacity: 0.7;
+  border-radius: 20px;
+  cursor: pointer;
+  margin:5px;
 }
