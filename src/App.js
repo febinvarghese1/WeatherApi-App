@@ -16,7 +16,7 @@ function App() {
         headers: {
           "x-rapidapi-host": "weatherapi-com.p.rapidapi.com",
           "x-rapidapi-key":
-            "c80e65cd84mshabd5ed73b07b1ecp1154bajsnb1fc9e2534e9",
+            "",
         },
       }
     );
